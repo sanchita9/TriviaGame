@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>TrivialTrivia</title>
+</head>
+<body>
+
+<!-- this button is created to start the game
+<button class='startGame'>Click Me to Play!</button>
+a wrapper div holds all the items that will be displayed after the startGame button is clicked -->
+	<div class="totalcontainer">
+	<div class="wrapper">
+
+		<h1 class="header">Totally Trivial Trivia!</h1>
+
+		<button id="startGame">Start</button>
+			<!-- div to hold countdown timer -->
+		<div class="timer" id="timeLeft">Time Remaining: 0</div>
+<!-- < div to hold all the questions ></div>-->
+<!--<div class='form' id='questions-container'></div>-->
+	</div>
+
+	<div class="container">
+		<div class="form" id="question-container"></div>
+
+		<p class="question1">What cloud type can described as wispy and thin?</p>		
+		<input type="radio" name="answers" value="Stratus"> Stratus<br> <input type="radio" name="answers" value="Cumulous"> Cumulous<br> <input type="radio" name="answers" value="Cirrus"> Cirrus <br> <input type="radio" name="answers" value="Nimbus"> Nimbus<br>
+		
+		<p class="question2">What weather tool is used to measure air pressure?</p>            
+		<input type="radio" name="answers" value="Barometer"> Barometer<br> <input type="radio" name="answers" value="Thermometer"> Thermometer<br> <input type="radio" name="answers" value="Seismometer"> Seismometer <br> <input type="radio" name="answers" value="Anemometer"> Anemometer<br>
+		
+		<p class="question3">If it is Summer in the United States, what season is it in Australia in the Southern Hemisphere?</p>
+		<input type="radio" name="answers" value="Fall"> Fall<br> <input type="radio" name="answers" value="Winter"> Winter<br> <input type="radio" name="answers" value="Summer"> Summer <br> <input type="radio" name="answers" value="Spring"> Spring<br>
+
+		<p class="question4">The westerlies are the prevailing winds which are caused predominantly by the:</p>
+		<input type="radio" name="answers" value="Gulf Stream"> Gulf Stream<br> <input type="radio" name="answers" value="Jet Stream"> Jet Stream<br> <input type="radio" name="answers" value="Water Stream"> Water Stream <br> <input type="radio" name="answers" value="Wind Stream"> Wind Stream<br>
+
+		<p class="question5">Which one travels faster in a lightning storm?</p>
+		<input type="radio" name="answers" value="No way to tell"> No way to tell<br> <input type="radio" name="answers" value="Thunder"> Thunder<br> <input type="radio" name="answers" value="Same"> Same <br> <input type="radio" name="answers" value="Lightning"> Lightning<br>
+
+	</div>
+
+	<!-- button to end game if player finishes the game before the time is up -->
+		<div class="footer">
+		<button id="doneButton">Done</button>
+<!-- message to be displayed when time is up -->
+		<div class="message" id="messageDiv"></div>
+<!-- div to display the results of the game -->
+		<div class="results"></div>
+
+		</div>
+<!-- linking to jquery and the local js file -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="assets/javascript/app.js"></script>	
+		</div>
+
+
+</body>
+</html>
